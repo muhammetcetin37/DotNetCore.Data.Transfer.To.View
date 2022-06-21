@@ -1,0 +1,9 @@
+﻿@model List<Product>
+
+    <ul>
+        @foreach (var item in TempData["ProductList"] as List<Product>)
+    {
+       <li>Product Name:@item.ProductName-- Price:@item.Price</li>        
+    }
+
+    </ul>
