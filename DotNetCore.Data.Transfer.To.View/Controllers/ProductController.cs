@@ -34,6 +34,7 @@ namespace DotNetCore.Data.Transfer.To.View.Controllers
             var tempDataVeri = TempData["ProductList"];
             var viewBagDataVeri = ViewBag.ProductsList;
             var viewDataVeri = ViewData["ProductList"];
+            ViewBag.UrunListesi = JsonConvert.DeserializeObject<List<Product>>(tempDataVeri.ToString());
             return View();
         }
     }

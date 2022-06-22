@@ -1,7 +1,7 @@
 ﻿@model List<Product>
 
     <ul>
-        @foreach (var item in TempData["ProductList"] as List<Product>)
+        @foreach (var item in ViewBag.UrunListesi)
     {
        <li>Product Name:@item.ProductName-- Price:@item.Price</li>        
     }
